@@ -1,0 +1,80 @@
+/* 
+
+Using Font Faces for loading ttf files for CSS because in production the google fonts css @import link does not load on first
+ so it doesn't get the css fonts, So we r using this to import the css via ttf files. 
+
+*/
+
+@font-face {
+    font-family: 'BestermindRegular';
+    src: url('/assets/fonts/BestermindRegular.ttf');
+    src: url('/assets/fonts/BestermindRegular.ttf') format('embedded-opentype'),
+        url('/assets/fonts/BestermindRegular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Tilt Neon';
+    src: url('/assets/fonts/TiltNeon-Regular.ttf');
+    src: url('/assets/fonts/TiltNeon-Regular.ttf') format('embedded-opentype'),
+        url('/assets/fonts/TiltNeon-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Shantell Sans';
+    src: url('/assets/fonts/ShantellSans-Regular.ttf');
+    src: url('/assets/fonts/ShantellSans-Regular.ttf') format('embedded-opentype'),
+        url('/assets/fonts/ShantellSans-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Varela Round';
+    src: url('/assets/fonts/VarelaRound-Regular.ttf');
+    src: url('/assets/fonts/VarelaRound-Regular.ttf') format('embedded-opentype'),
+        url('/assets/fonts/VarelaRound-Regular.ttf') format('truetype'),
+}
+
+* {
+    box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+body {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #FC9816;
+    --sb-size: 10px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    /* border-radius: 10px; */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+
+}

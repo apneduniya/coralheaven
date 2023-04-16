@@ -1,0 +1,210 @@
+nav {
+    height: 66px;
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    margin-top: 20px;
+    padding: 20px 40px;
+    position: fixed;
+    /* position: -webkit-sticky; */
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .1);
+    z-index: 99999;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 30px;
+}
+
+.nav-heading {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 700;
+    user-select: none;
+    font-family: 'Shantell Sans', cursive;
+    user-select: none;
+}
+
+.nav-link-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 40px;
+    padding: 0;
+    cursor: pointer;
+    letter-spacing: .2em;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.intro-container {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.intro-description-container {
+    position: absolute;
+    top: 25%;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+}
+
+.intro-description-container h2 {
+    color: white;
+    font-size: 4em;
+    /* font-family: 'Shantell Sans', cursive; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.intro-description-container p {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.intro-img {
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    user-select: none;
+}
+
+.facility-container {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    padding-bottom: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+}
+
+.short-info-container {
+    height: 80px;
+    width: 900px;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(40px);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -40px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.short-info-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    color: black;
+}
+
+.short-info-container h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.short-info-container span {
+    padding: 0;
+    margin: 0;
+    font-size: .9em;
+    font-weight: lighter;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.location-container h4::before {
+    content: "";
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-image: url("https://www.iconsdb.com/icons/preview/orange/map-marker-2-xxl.png");
+}
+
+.facility-child-container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 calc(50% - 500px);
+    position: relative;
+    gap: 100px;
+}
+
+.facility-child-container img {
+    height: 300px;
+    width: 400px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.facility-child-container img::before {
+    content: "";
+    height: 200px;
+    width: 300px;
+    background-color: #FC9816;
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    z-index: -1;
+}
+
+.facility-child-description-container {
+    height: auto;
+    width: 540px;
+}
+
+.facility-child-description-container h2 {
+    color: black;
+    font-size: 2.8em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.facility-child-description-container span {
+    color: black;
+    font-size: 1.1em;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
